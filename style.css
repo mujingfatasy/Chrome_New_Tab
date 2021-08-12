@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    background: whitesmoke;
+    color: darkslategrey;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100vh;
+
+  }
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .search-box {
+    margin-top:100px;
+    height: 30px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-box  .search-input {
+    background:none ;
+    border: none;
+    outline: none;
+    color:white;
+    font-size: 14px;
+    width: 0px;
+    transition: 0.6s;
+  }
+  
+  .search-box  .search-btn {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 0;
+      background: none;
+  }
+.search-box:hover  .search-input {
+    width: 250px;
+}
+.search-input:active {
+    width: 250px;
+}
+.search-box:hover  .search-btn{
+    border-radius: 50%;
+    background-color: white;
+    color: gray;
+}
+.search-box  .search-input:focus {
+  width: 250px;
+}
+
+
+  #background, #foreground {
+    position: absolute;
+  }
+  #wave {
+    bottom: 0;
+    height: calc(40vh + 20vw);
+  }
+  #header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    top: 0;
+    height: calc(64vh - 6vw);
+    padding: 6vh 4vw 0;
+    box-sizing: border-box;
+  }
+  #arrow {
+    width: calc(4vh + 2vw);
+    flex-shrink: 0;
+  }
+  #prompt {
+    font: calc(2vh + 1.5vw) serif;
+    margin: 1vh;
+  }
+  #title {
+    font: bold calc(6vh + 3vw)  serif;
+    margin-top: 0;
+    margin-bottom: auto;
+    text-align: center;
+  }
+  #title > span {
+    word-break: keep-all;
+    white-space: nowrap;
+  }
+  #blessing {
+    margin: 0;
+    font: bolder calc(1.5rem + 1vw) serif;
+    text-indent: 2em;
+    text-align: justify;
+    width: 100%;
+    overflow: auto;
+  }
+  #blessing::-webkit-scrollbar {
+    display: none;
+  }
+  .fixed {
+    position: fixed;
+    width: 100%;
+  }
+  .fade {
+    transition: all 0.3s ease-in-out;
+  }
+  .hidden {
+    opacity: 0;
+  }
